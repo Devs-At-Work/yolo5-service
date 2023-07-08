@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: yolo5
-          image: 854171615125.dkr.ecr.us-east-1.amazonaws.com/deepanshurawat6-detection-model:0.1.0
+          image: 854171615125.dkr.ecr.us-east-1.amazonaws.com/deepanshurawat6-detection-model:0.2.0
           resources:
             requests:
               cpu: 500m
@@ -34,8 +34,7 @@ spec:
   selector:
     app: yolo5
   ports:
-    - protocol: TCP
-      port: 8081
+    - port: 8081
       targetPort: 8081
 
 ---
