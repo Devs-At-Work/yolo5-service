@@ -67,3 +67,4 @@ jobs:
         git commit -am "updated: build number for yolo5 image"
         git push
 
+# This pipeline push the docker image to docker hub and then update the deployment yaml file in the yolo5-configs repo, to trigger Argo CD workflow.
